@@ -5,5 +5,4 @@ var server = http.createServer((req,res) => {
   // pipe the file-reading stream to the response object and Bob's your uncle
   fs.createReadStream(process.argv[3]).pipe(res);
 });
-// listen on port number specified as the first argument
 server.listen(process.argv[2]);
